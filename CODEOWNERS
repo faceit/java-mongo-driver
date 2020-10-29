@@ -1,0 +1,4 @@
+# This file manages who needs to review changes to files in this repository.
+
+# java team reviews everything
+* @faceit/java
