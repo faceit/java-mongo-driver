@@ -1,4 +1,4 @@
-@Library('faceit-shared-libs@add-comment-to-java-lib') _
+@Library('faceit-shared-libs') _
 javaDefaultLibPipeline(
     projectName : 'opentracing-java-mongo-driver',
     dependabotTriggerName: 'io.opentracing.contrib:opentracing-mongo-driver',

@@ -18,22 +18,22 @@
   <parent>
     <artifactId>opentracing-mongo-parent</artifactId>
     <groupId>io.opentracing.contrib</groupId>
-    <version>0.1.6-FACEIT-SNAPSHOT</version>
+    <version>${version}</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>opentracing-mongo-driver</artifactId>
-  <name>OpenTracing Instrumentation for Mongo Driver</name>
-  <description>OpenTracing Instrumentation for Mongo Driver</description>
+  <name>OpenTracing Instrumentation for Mongo Driver Sync</name>
+  <description>OpenTracing Instrumentation for Mongo Driver Sync</description>
 
   <properties>
-      <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
+
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>io.opentracing.contrib</groupId>
       <artifactId>opentracing-mongo-common</artifactId>
-      <version>0.1.6-FACEIT-SNAPSHOT</version>
+      <version>${version}</version>
     </dependency>
     <dependency>
         <groupId>org.mongodb</groupId>
