@@ -18,24 +18,27 @@
   <parent>
     <artifactId>opentracing-mongo-parent</artifactId>
     <groupId>io.opentracing.contrib</groupId>
-    <version>0.1.6-SNAPSHOT</version>
+    <version>${version}</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>opentracing-mongo-driver-reactivestreams</artifactId>
   <name>OpenTracing Instrumentation for Mongo Reactive Streams Driver</name>
   <description>OpenTracing Instrumentation for Mongo Reactive Streams Driver</description>
+  
+  <properties>
+  </properties>
 
   <dependencies>
     <dependency>
       <groupId>io.opentracing.contrib</groupId>
       <artifactId>opentracing-mongo-common</artifactId>
-      <version>0.1.6-SNAPSHOT</version>
+      <version>${version}</version>
     </dependency>
     <dependency>
-      <groupId>org.mongodb</groupId>
-      <artifactId>mongodb-driver-reactivestreams</artifactId>
-      <version>${mongo.driver.reactivestreams.version}</version>
-      <scope>provided</scope>
+        <groupId>org.mongodb</groupId>
+        <artifactId>mongodb-driver-reactivestreams</artifactId>
+        <version>${mongo.driver.version}</version>
+        <scope>provided</scope>
     </dependency>
   </dependencies>
 
