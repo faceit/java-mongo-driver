@@ -21,12 +21,12 @@
 
 	<scm>
 		<url>http://github.com/faceit/java-driver-mongo.git</url>
-        <connection>git@github.com:faceit/java-driver-mongo.git</connection>
+		<connection>git@github.com:faceit/java-driver-mongo.git</connection>
 		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
-        <version>SNAPSHOT</version>
+		<version>SNAPSHOT</version>
 		<java.version>11</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
@@ -99,6 +99,30 @@
 						<phase>prepare-package</phase>
 						<goals>
 							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>flatten-maven-plugin</artifactId>
+				<version>1.0.0</version>
+				<configuration>
+					<updatePomFile>true</updatePomFile>
+				</configuration>
+				<executions>
+					<execution>
+						<id>flatten</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>flatten</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>flatten.clean</id>
+						<phase>clean</phase>
+						<goals>
+							<goal>clean</goal>
 						</goals>
 					</execution>
 				</executions>
