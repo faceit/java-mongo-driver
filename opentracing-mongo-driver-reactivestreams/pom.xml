@@ -26,6 +26,7 @@
   <description>OpenTracing Instrumentation for Mongo Reactive Streams Driver</description>
   
   <properties>
+    <version>SNAPSHOT</version>
   </properties>
 
   <dependencies>

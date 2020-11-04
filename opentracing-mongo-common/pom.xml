@@ -24,6 +24,7 @@
 
   <artifactId>opentracing-mongo-common</artifactId>
   <properties>
+    <version>SNAPSHOT</version>
   </properties>
 
   <dependencies> 
